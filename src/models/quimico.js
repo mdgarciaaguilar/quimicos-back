@@ -6,7 +6,10 @@ const productSchema = mongoose.Schema({
     type: String,
     required: true
   },
-  hazards: {
+  acuteHealthEffects: {
+    type: String
+  },
+  chronicHealthEffects: {
     type: String
   },
   eyeContact: {

@@ -29,7 +29,7 @@ const createQuimico = function(req, res) {
 const updateQuimico = function(req, res) {
   const _id = req.params.id
   const updates = Object.keys(req.body)
-  const allowedUpdates = ['name', 'hazards', 'eyeContact', 'skinContact', 'seriousSkinContact', 'inhalation', 'seriousInhalation', 'ingestion', 'seriousIngestion']
+  const allowedUpdates = ['name', 'acuteHealthEffects', 'chronicHealthEffects', 'eyeContact', 'skinContact', 'seriousSkinContact', 'inhalation', 'seriousInhalation', 'ingestion', 'seriousIngestion']
   // revisa que los updates enviados sean permitidos, que no envie una key que no permitimos
   const isValidUpdate = updates.every((update) => allowedUpdates.includes(update))
 
