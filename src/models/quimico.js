@@ -7,18 +7,28 @@ const productSchema = mongoose.Schema({
     required: true
   },
   hazards: {
-    type: [String],
-    default: undefined
+    type: String
   },
-  firstAid:{
-    type: [{
-      style: {
-        type: String
-      },
-      description: {
-        type: String
-      }
-    }]
+  eyeContact: {
+    type: String
+  },
+  skinContact: {
+    type: String
+  },
+  seriousSkinContact: {
+    type: String
+  },
+  inhalation: {
+    type: String
+  },
+  seriousInhalation: {
+    type: String
+  },
+  ingestion: {
+    type: String
+  },
+  seriousIngestion: {
+    type: String
   }
 })
 
